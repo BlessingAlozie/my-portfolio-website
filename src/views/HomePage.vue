@@ -19,6 +19,20 @@ const featuredDesign = [
     image: '/images/design-2.jpg',
     tags: ['Product Design', 'Fintech', 'iOS'],
     link: '/case-studies/banking-app'
+  },
+  {
+    title: 'Banking App',
+    description: 'Mobile-first banking experience with focus on accessibility.',
+    image: '/images/design-2.jpg',
+    tags: ['Product Design', 'Fintech', 'iOS'],
+    link: '/case-studies/banking-app'
+  },
+  {
+    title: 'Banking App',
+    description: 'Mobile-first banking experience with focus on accessibility.',
+    image: '/images/design-2.jpg',
+    tags: ['Product Design', 'Fintech', 'iOS'],
+    link: '/case-studies/banking-app'
   }
 ]
 
@@ -43,7 +57,7 @@ const featuredDev = [
 <template>
   <main class="pt-16 lg:pt-20">
     <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section class=" relative min-h-[90vh] flex items-center overflow-hidden">
       <!-- Animated Background -->
       <div class="absolute inset-0 -z-100">
         <!-- Gradient orbs -->
@@ -112,7 +126,8 @@ const featuredDev = [
     </section>
 
     <!-- Featured Design Work -->
-    <SectionWrapper size="lg" class="bg-muted/30">
+    <SectionWrapper size="lg" class="bg-muted/30 w-full">
+      <div class="max-w-7xl mx-auto px-4">
       <AnimatedSection animation="fade-up">
         <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
@@ -135,7 +150,7 @@ const featuredDev = [
         </div>
       </AnimatedSection>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
         <AnimatedSection 
           v-for="(project, index) in featuredDesign" 
           :key="project.title"
@@ -147,10 +162,12 @@ const featuredDev = [
           </RouterLink>
         </AnimatedSection>
       </div>
+      </div>
     </SectionWrapper>
 
     <!-- Featured Development Work -->
-    <SectionWrapper size="lg">
+    <SectionWrapper size="lg w-full">
+      <div class="max-w-7xl mx-auto px-4">
       <AnimatedSection animation="fade-up">
         <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
           <div>
@@ -173,7 +190,7 @@ const featuredDev = [
         </div>
       </AnimatedSection>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
         <AnimatedSection 
           v-for="(project, index) in featuredDev" 
           :key="project.title"
@@ -184,6 +201,7 @@ const featuredDev = [
             <ProjectCard v-bind="project" />
           </RouterLink>
         </AnimatedSection>
+      </div>
       </div>
     </SectionWrapper>
 
