@@ -166,7 +166,7 @@ const featuredDev = [
     </SectionWrapper>
 
     <!-- Featured Development Work -->
-    <SectionWrapper size="lg w-full">
+    <SectionWrapper size="lg" class="w-full">
       <div class="max-w-7xl mx-auto px-4">
       <AnimatedSection animation="fade-up">
         <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
@@ -206,7 +206,8 @@ const featuredDev = [
     </SectionWrapper>
 
     <!-- CTA Section -->
-    <SectionWrapper size="lg" class="bg-muted/30">
+    <SectionWrapper size="lg" class="bg-muted/30 w-full">
+      <div class="max-w-7xl mx-auto px-4">
       <AnimatedSection animation="scale-in">
         <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/10 via-card to-blue-400/10 border border-border p-8 md:p-12 lg:p-16 text-center">
           <!-- Decorative elements -->
@@ -232,6 +233,7 @@ const featuredDev = [
           </div>
         </div>
       </AnimatedSection>
+      </div>
     </SectionWrapper>
   </main>
 </template>
