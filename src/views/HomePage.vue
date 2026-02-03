@@ -126,7 +126,7 @@ const featuredDev = [
     </section>
 
     <!-- Featured Design Work -->
-    <SectionWrapper size="lg" class="bg-muted/30 w-full">
+    <SectionWrapper size="lg" class="bg-muted w-full">
       <div class="max-w-7xl mx-auto px-4">
       <AnimatedSection animation="fade-up">
         <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
@@ -209,7 +209,7 @@ const featuredDev = [
     <SectionWrapper size="lg" class="bg-muted/30 w-full">
       <div class="max-w-7xl mx-auto px-4">
       <AnimatedSection animation="scale-in">
-        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/10 via-card to-blue-400/10 border border-border p-8 md:p-12 lg:p-16 text-center">
+        <div class="relative overflow-hidden rounded-3xl  from-primary/10 via-card to-blue-400/10 border border-border p-8 md:p-12 lg:p-16 text-center">
           <!-- Decorative elements -->
           <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
           <div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-400/10 rounded-full blur-3xl" />

@@ -21,7 +21,8 @@ const socialLinks = [
 </script>
 
 <template>
-  <footer class="border-t border-border bg-card/50">
+  <footer class="border-t border-border w-full bg-card/50">
+    <div class="max-w-7xl mx-auto px-4">
     <SectionWrapper size="md">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
         <!-- Brand -->
@@ -102,5 +103,6 @@ const socialLinks = [
         </p>
       </div>
     </SectionWrapper>
+    </div>
   </footer>
 </template>
