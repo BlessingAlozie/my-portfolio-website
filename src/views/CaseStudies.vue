@@ -50,8 +50,11 @@ const caseStudies = [
   <main class="pt-24 lg:pt-32">
     <!-- Hero -->
     <SectionWrapper size="md">
+       <div class="max-w-7xl mx-auto">
       <div class="max-w-3xl">
-        <AnimatedSection animation="fade-up">
+        <AnimatedSection animation="fad
+Get in Touch
+e-up">
           <span class="text-primary font-medium text-sm uppercase tracking-widest mb-4 block">
             Case Studies
           </span>
@@ -70,10 +73,12 @@ const caseStudies = [
           </p>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- Case Studies List -->
     <SectionWrapper size="lg">
+       <div class="max-w-7xl mx-auto">
       <div class="space-y-16 lg:space-y-24">
         <AnimatedSection 
           v-for="(study, index) in caseStudies" 
@@ -142,6 +147,7 @@ const caseStudies = [
           </RouterLink>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
   </main>
 </template>

@@ -127,7 +127,7 @@ const featuredDev = [
                   View Design Work
                 </AnimatedButton>
               </RouterLink>
-              <RouterLink to="/development" class="mb-8">
+              <RouterLink to="/development" class="mb-8 sm:mb-0">
                 <AnimatedButton variant="outline" size="md">
                   <svg
                     class="w-5 h-5"

@@ -110,6 +110,7 @@ const techStack = [
   <main class="pt-24 lg:pt-32">
     <!-- Hero -->
     <SectionWrapper size="md">
+       <div class="max-w-7xl mx-auto">
       <div class="max-w-3xl">
         <AnimatedSection animation="fade-up">
           <span class="text-primary font-medium text-sm uppercase tracking-widest mb-4 block">
@@ -131,10 +132,12 @@ const techStack = [
           </p>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- Tech Stack -->
     <SectionWrapper size="md" class="bg-muted/30">
+       <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
           Primary Tech Stack
@@ -162,10 +165,12 @@ const techStack = [
           </div>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- Projects -->
     <SectionWrapper size="lg">
+       <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
           Featured Projects
@@ -286,10 +291,12 @@ const techStack = [
           </article>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- GitHub Stats -->
     <SectionWrapper size="md" class="bg-muted/30">
+       <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="scale-in">
         <div class="text-center">
           <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -312,6 +319,7 @@ const techStack = [
           </a>
         </div>
       </AnimatedSection>
+       </div>
     </SectionWrapper>
   </main>
 </template>

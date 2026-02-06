@@ -71,6 +71,7 @@ const designPrinciples = [
   <main class="pt-24 lg:pt-32">
     <!-- Hero -->
     <SectionWrapper size="md">
+       <div class="max-w-7xl mx-auto">
       <div class="max-w-3xl">
         <AnimatedSection animation="fade-up">
           <span class="text-primary font-medium text-sm uppercase tracking-widest mb-4 block">
@@ -91,10 +92,12 @@ const designPrinciples = [
           </p>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- Design Principles -->
     <SectionWrapper size="md" class="bg-muted/30">
+       <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
           Design Philosophy
@@ -133,10 +136,12 @@ const designPrinciples = [
           </div>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- Case Studies -->
     <SectionWrapper size="lg">
+       <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
           Case Studies
@@ -193,6 +198,7 @@ const designPrinciples = [
           </RouterLink>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
   </main>
 </template>

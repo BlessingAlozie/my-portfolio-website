@@ -84,9 +84,10 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <main class="pt-24 lg:pt-32">
+  <main class="pt-24 lg:pt-32 w-full">
     <!-- Hero -->
     <SectionWrapper size="md">
+       <div class="max-w-7xl mx-auto">
       <div class="max-w-3xl">
         <AnimatedSection animation="fade-up">
           <span class="text-primary font-medium text-sm uppercase tracking-widest mb-4 block">
@@ -107,10 +108,12 @@ const handleSubmit = async () => {
           </p>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- Contact Form & Info -->
     <SectionWrapper size="lg">
+       <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
         <!-- Form -->
         <AnimatedSection animation="fade-up">
@@ -317,6 +320,7 @@ const handleSubmit = async () => {
           </AnimatedSection>
         </div>
       </div>
+       </div>
     </SectionWrapper>
   </main>
 </template>

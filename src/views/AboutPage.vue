@@ -4,14 +4,24 @@ import SectionWrapper from '../components/ui/SectionWrapper.vue'
 import AnimatedSection from '../components/ui/AnimatedSection.vue'
 import AnimatedButton from '../components/ui/AnimatedButton.vue'
 
+// const designSkills = [
+//   'Figma', 'Adobe XD', 'Sketch', 'Prototyping', 'Design Systems', 
+//   'User Research', 'Wireframing', 'Visual Design', 'Interaction Design'
+// ]
+
 const designSkills = [
-  'Figma', 'Adobe XD', 'Sketch', 'Prototyping', 'Design Systems', 
+  'Figma', 'Prototyping', 
   'User Research', 'Wireframing', 'Visual Design', 'Interaction Design'
 ]
 
+// const frontendSkills = [
+//   'Vue.js 3', 'React', 'TypeScript', 'Tailwind CSS', 'Nuxt.js',
+//   'JavaScript ES6+', 'HTML5/CSS3', 'Git', 'REST APIs', 'GraphQL'
+// ]
+
 const frontendSkills = [
-  'Vue.js 3', 'React', 'TypeScript', 'Tailwind CSS', 'Nuxt.js',
-  'JavaScript ES6+', 'HTML5/CSS3', 'Git', 'REST APIs', 'GraphQL'
+  'Vue.js 3', 'React',  'Tailwind CSS', 
+  'JavaScript ES6+', 'HTML5/CSS3', 'Git', 'REST APIs'
 ]
 
 const productSkills = [
@@ -20,24 +30,25 @@ const productSkills = [
 ]
 
 const experience = [
+{
+  role: 'Frontend Developer',
+  company: 'Ivory Learn',
+  period: '2025 - Present',
+  description: 'Developed responsive and high-performance web applications using Vue.js. Worked closely with designers to implement intuitive, user-friendly interfaces, optimized frontend performance, and ensured cross-browser compatibility. Contributed to improving the overall user experience and maintaining scalable, reusable code.'
+},
   {
-    role: 'Senior Frontend Developer & Product Designer',
-    company: 'Tech Startup',
-    period: '2022 - Present',
-    description: 'Leading frontend architecture and design system development. Shipped multiple features that increased user engagement by 35%.'
-  },
+    role: 'Product Designer',
+    company: 'Peerpay Network',
+    period: '2025 - Present',
+   description: 'Designing and refining the PeerPay lending platform, creating intuitive user interfaces, seamless onboarding flows, and robust design systems. Collaborating with product and engineering teams to build secure, user-friendly fintech experiences that drive adoption and engagement.'
+},
   {
-    role: 'UI/UX Designer',
-    company: 'Digital Agency',
-    period: '2020 - 2022',
-    description: 'Designed and prototyped digital products for enterprise clients. Led design sprints and user research initiatives.'
-  },
-  {
-    role: 'Junior Frontend Developer',
-    company: 'Web Studio',
-    period: '2019 - 2020',
-    description: 'Built responsive web applications using Vue.js. Collaborated closely with designers to implement pixel-perfect interfaces.'
-  }
+  role: 'Frontend Web Developer (Internship)',
+  company: 'The Boltcliq Company',
+  period: '2023 - 2024',
+  description: 'Assisted in building responsive web applications and collaborated with designers to implement user-friendly interfaces.'
+}
+ 
 ]
 </script>
 
@@ -45,22 +56,23 @@ const experience = [
   <main class="pt-24 lg:pt-32">
     <!-- Hero -->
     <SectionWrapper size="lg">
+       <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <!-- Image -->
         <AnimatedSection animation="fade-up">
           <div class="relative">
             <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-muted glow">
               <img
-                src="/placeholder.svg"
+                src="/Blessing.jpeg"
                 alt="Profile photo"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover md:scale-x-[-1]" 
               />
             </div>
             <!-- Decorative badge -->
             <div class="absolute -bottom-6 -right-6 bg-card border border-border rounded-2xl p-4 shadow-xl">
               <div class="flex items-center gap-3">
                 <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span class="text-2xl font-bold text-primary">5+</span>
+                  <span class="text-2xl font-bold text-primary">3+</span>
                 </div>
                 <div>
                   <p class="text-sm font-medium text-foreground">Years of</p>
@@ -80,7 +92,7 @@ const experience = [
           </AnimatedSection>
 
           <AnimatedSection animation="fade-up" :delay="150">
-            <h1 class="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+            <h1 class="font-display text-3xl md:text-5xl font-bold text-foreground mb-6 text-balance">
               A designer who codes, a developer who designs
             </h1>
           </AnimatedSection>
@@ -123,10 +135,12 @@ const experience = [
           </AnimatedSection>
         </div>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- Skills -->
     <SectionWrapper size="lg" class="bg-muted/30">
+       <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <div class="text-center mb-12">
           <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -202,6 +216,7 @@ const experience = [
           </div>
         </AnimatedSection>
       </div>
+       </div>
     </SectionWrapper>
 
     <!-- Experience -->
