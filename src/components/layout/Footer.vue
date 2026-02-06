@@ -21,10 +21,12 @@ const socialLinks = [
 </script>
 
 <template>
-  <footer class="border-t border-border w-full bg-card/50">
-    <div class="max-w-7xl mx-auto px-4">
-    <SectionWrapper size="md">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+  <footer class="w-full bg-card/50 border-t border-border">
+    <!-- full-width background -->
+    <SectionWrapper size="md" class="px-0">
+      <!-- main content grid -->
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+        
         <!-- Brand -->
         <div class="space-y-4">
           <RouterLink to="/" class="inline-block">
@@ -41,9 +43,9 @@ const socialLinks = [
         <!-- Quick Links -->
         <div>
           <h4 class="font-semibold text-foreground mb-4">Quick Links</h4>
-          <ul class="space-y-3">
+          <ul class="space-y-2">
             <li v-for="link in quickLinks" :key="link.path">
-              <RouterLink 
+              <RouterLink
                 :to="link.path"
                 class="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
               >
@@ -63,7 +65,7 @@ const socialLinks = [
               :href="social.url"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-10 h-10 flex items-center justify-center rounded-lg bg-muted hover:bg-primary/10 hover:text-primary transition-all duration-200"
+              class="w-9 h-9 flex items-center justify-center rounded-lg bg-muted hover:bg-primary/10 hover:text-primary transition-all duration-200"
               :aria-label="social.name"
             >
               <!-- GitHub -->
@@ -80,21 +82,19 @@ const socialLinks = [
               </svg>
               <!-- Dribbble -->
               <svg v-if="social.icon === 'dribbble'" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/>
+                <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12z"/>
               </svg>
             </a>
           </div>
-          <a 
-            href="mailto:hello@example.com"
-            class="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
-          >
-            hello@example.com
+
+          <a href="mailto:alozieblessing23@gmail.com" class="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+            alozieblessing23@gmail.com
           </a>
         </div>
       </div>
 
       <!-- Bottom -->
-      <div class="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4 max-w-7xl mx-auto px-4">
         <p class="text-sm text-muted-foreground">
           {{ currentYear }} Portfolio. Crafted with care.
         </p>
@@ -103,6 +103,5 @@ const socialLinks = [
         </p>
       </div>
     </SectionWrapper>
-    </div>
   </footer>
 </template>
