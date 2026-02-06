@@ -4,21 +4,22 @@ import AnimatedSection from '../components/ui/AnimatedSection.vue'
 import AnimatedButton from '../components/ui/AnimatedButton.vue'
 
 const projects = [
-  {
-    title: 'Real-Time Analytics Dashboard',
-    description: 'A comprehensive analytics dashboard built with Vue.js 3 and D3.js. Features real-time data updates via WebSocket, interactive charts, and customizable widgets.',
-    image: '/images/dev-1.jpg',
-    tags: ['Vue.js 3', 'D3.js', 'WebSocket', 'Tailwind CSS'],
-    liveUrl: 'https://example.com/dashboard',
-    githubUrl: 'https://github.com/username/dashboard',
-    highlights: [
-      'Real-time data streaming with WebSocket',
-      'Custom chart components with D3.js',
-      'Responsive and accessible design',
-      'Performance optimized for large datasets'
-    ],
-    challenges: 'Handling real-time updates efficiently while maintaining smooth 60fps animations for charts with thousands of data points.'
-  },
+{
+  title: 'Landing Page for CRR Network',
+  description: 'Developed a high-performing, visually engaging landing page for CRR Network, optimized for SEO, accessibility, and responsive design. Implemented modern frontend practices with Vue.js 3 and Tailwind CSS to deliver a seamless user experience across devices.',
+  image: '/CRRNetwork.png',
+  tags: ['Vue.js 3', 'Tailwind CSS', 'HTML', 'CSS', 'SEO', 'Accessibility'],
+  liveUrl: 'https://www.crrnetwork.org/',
+  // githubUrl: 'https://github.com/username/crrnetwork-landing',
+  highlights: [
+    'Fully responsive landing page with mobile-first design approach',
+    'SEO optimized with meta tags, semantic HTML, and fast load times',
+    'Accessibility enhancements: ARIA attributes, keyboard navigation, and color contrast compliance',
+    'Interactive sections and smooth animations for better user engagement',
+    'Performance optimization for fast page rendering and minimal bundle size'
+  ],
+  challenges: 'Balancing visual design with accessibility standards and SEO best practices while maintaining optimal performance across devices.'
+},
   {
     title: 'Vue Component Library',
     description: 'An open-source Vue 3 component library with 50+ accessible, customizable components. Built with TypeScript and documented with Storybook.',
@@ -98,8 +99,8 @@ const projects = [
 
 const techStack = [
   { name: 'Vue.js 3', level: 95, category: 'Framework' },
-  { name: 'TypeScript', level: 90, category: 'Language' },
-  { name: 'Nuxt.js', level: 85, category: 'Framework' },
+  { name: 'JavaScript', level: 90, category: 'Language' },
+  // { name: 'Nuxt.js', level: 85, category: 'Framework' },
   { name: 'Tailwind CSS', level: 95, category: 'Styling' },
   { name: 'Pinia', level: 90, category: 'State' },
   { name: 'Vite', level: 85, category: 'Build Tool' }
