@@ -5,45 +5,59 @@ import AnimatedSection from '../components/ui/AnimatedSection.vue'
 
 const caseStudies = [
   {
-    slug: 'ecommerce-redesign',
-    title: 'E-Commerce Platform Redesign',
-    subtitle: 'Transforming the shopping experience',
-    description: 'How strategic UX improvements led to a 40% increase in conversion rates and significantly reduced cart abandonment for a fashion e-commerce platform.',
-    image: '/images/case-1.jpg',
-    category: 'UI/UX Design',
-    metrics: [
-      { label: 'Conversion Increase', value: '+40%' },
-      { label: 'Cart Abandonment', value: '-25%' },
-      { label: 'Session Duration', value: '+35%' }
-    ]
-  },
-  {
-    slug: 'banking-app',
-    title: 'Mobile Banking App',
-    subtitle: 'Banking for the next generation',
-    description: 'Designing an inclusive, mobile-first banking experience that makes financial management intuitive and accessible for Gen Z users.',
-    image: '/images/case-2.jpg',
+    slug: 'peerpay-network',
+    title: 'PeerPay Network Product Design',
+    subtitle: 'Designing trust in a fintech ecosystem',
+    description: 'Designed core product experiences for PeerPay Network, translating complex peer-to-peer credit workflows into clear, structured, and trust-driven interfaces. Worked closely with the Product Manager to iterate on flows, refine user journeys, and continuously improve usability across web and dashboard environments.',
+    image: '/Peerpay-Network.png',
     category: 'Product Design',
     metrics: [
-      { label: 'User Satisfaction', value: '4.8/5' },
-      { label: 'Task Completion', value: '95%' },
-      { label: 'App Downloads', value: '500K+' }
+      { label: 'Workflow Clarity', value: 'Improved' },
+      { label: 'Iteration Cycles', value: 'Ongoing' },
+      { label: 'Responsive Layouts', value: '100%' }
     ]
   },
   {
-    slug: 'saas-dashboard',
-    title: 'SaaS Analytics Dashboard',
-    subtitle: 'Data visualization reimagined',
-    description: 'Creating an intuitive analytics dashboard that transforms complex data into actionable insights for enterprise decision-makers.',
-    image: '/images/case-3.jpg',
+    slug: 'peerpay-credit-dashboard',
+    title: 'PeerPay Credit Transactions Dashboard',
+    subtitle: 'Simplifying complex financial data',
+    description: 'Designed a structured and insight-driven credit transactions dashboard in Figma for PeerPay Network. Focused on filtering systems, transaction states, repayment tracking, and visual hierarchy to ensure decision-makers can quickly interpret financial data with confidence.',
+    image: '/Peerpay-Network-Credit Transaction _ All Type.png',
     category: 'Dashboard Design',
     metrics: [
-      { label: 'Time to Insight', value: '-60%' },
-      { label: 'Feature Adoption', value: '+80%' },
-      { label: 'User Retention', value: '92%' }
+      { label: 'Data Clarity', value: 'High' },
+      { label: 'Filtering System', value: 'Advanced' },
+      { label: 'Desktop Optimization', value: '100%' }
+    ]
+  },
+  {
+    slug: 'crrnetwork-website',
+    title: 'CRRNetwork Website',
+    subtitle: 'Design, development & SEO optimization',
+    description: 'Designed and developed the CRRNetwork website from concept to deployment. Built with Vue.js and Tailwind CSS, the platform was optimized for SEO, accessibility, and performance. Focused on clear information architecture, brand alignment, and responsive layouts to ensure seamless experience across devices.',
+    image: '/CRRNetwork.png',
+    category: 'Design & Development',
+    metrics: [
+      { label: 'SEO Optimization', value: 'Implemented' },
+      { label: 'Mobile Responsive', value: '100%' },
+      { label: 'Performance Focus', value: 'Optimized' }
+    ]
+  },
+  {
+    slug: 'daniels-kitchen',
+    title: 'Daniel’s Kitchen Website',
+    subtitle: 'Designing and building a modern restaurant experience',
+    description: 'Designed and developed a visually engaging and conversion-focused website for Daniel’s Kitchen. Combined strong UI principles with responsive frontend implementation using Vue.js and Tailwind CSS to create an immersive browsing experience for food lovers.',
+    image: '/Daniels-kitchen.png',
+    category: 'Design & Development',
+    metrics: [
+      { label: 'Responsive Design', value: '100%' },
+      { label: 'User Experience', value: 'Optimized' },
+      { label: 'Interactive UI', value: 'Implemented' }
     ]
   }
 ]
+
 </script>
 
 <template>

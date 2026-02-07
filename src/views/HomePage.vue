@@ -34,14 +34,14 @@ const featuredDesign = [
   link: "/case-studies/crrnetwork-website",
 },
 
- {
-  title: "PeerPay Credit Transactions Dashboard",
-  description:
-    "Designed a comprehensive credit transactions dashboard for PeerPay Network in Figma, simplifying complex financial data into clear, actionable insights. Focused on structured data visualization, intuitive filtering, and responsive layouts to ensure seamless usability across desktop and tablet devices.",
-  image: "/Peerpay-Network-Credit Transaction _ All Type.png",
-  tags: ["Product Design", "Fintech", "Dashboard Design", "Figma", "Responsive Design"],
-  link: "/case-studies/peerpay-credit-dashboard",
-},
+//  {
+//   title: "PeerPay Credit Transactions Dashboard",
+//   description:
+//     "Designed a comprehensive credit transactions dashboard for PeerPay Network in Figma, simplifying complex financial data into clear, actionable insights. Focused on structured data visualization, intuitive filtering, and responsive layouts to ensure seamless usability across desktop and tablet devices.",
+//   image: "/Peerpay-Network-Credit Transaction _ All Type.png",
+//   tags: ["Product Design", "Fintech", "Dashboard Design", "Figma", "Responsive Design"],
+//   link: "/case-studies/peerpay-credit-dashboard",
+// },
 
 ];
 
@@ -53,6 +53,7 @@ const featuredDev = [
   image: "/CRRNETWORK2.png",
   tags: ["Vue.js", "JavaScript", "HTML5", "CSS3", "Responsive Design"],
   link: "https://www.crrnetwork.org/",
+  link: "/case-studies/crrnetwork-web-platform",
 },
 
   {

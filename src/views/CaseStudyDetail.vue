@@ -117,7 +117,7 @@ const caseStudiesData = {
   subtitle: "Designing and building a high-performance, brand-focused website",
   heroImage: "/CRRNetwork.png",
   role: "Product Designer & Frontend Developer",
-  timeline: "1 month",
+  timeline: "Initial design: 1 month | Iterations ongoing based on user feedback",
   team: "Solo Project (Me)",
   tools: ["Figma", "HTML", "CSS", "JavaScript", "Vue.js", "SEO", "Responsive Design"],
   overview: "I designed and developed the CRRNetwork website from the ground up. I translated the brand’s vision into a clean, modern digital experience with intuitive navigation, strong visual hierarchy, and fully responsive layouts. SEO best practices were integrated during development to ensure discoverability and performance across search engines.",
@@ -206,7 +206,7 @@ const caseStudiesData = {
     subtitle: 'Designing clear fintech workflows',
     heroImage: '/Peerpay-Network.png',
     role: 'Product Designer',
-    timeline: 'Continuous (Ongoing)',
+    timeline: 'Initial design: 1 month | Iterations ongoing based on user feedback',
     team: '2 Designers, 4 Developers, 1 PM',
     tools: ['Figma', 'Responsive Design', 'Fintech Tools'],
     overview: 'Designed key product experiences for PeerPay Network in Figma, translating complex fintech workflows into clear, user-friendly interfaces. Focused on intuitive navigation, trust-building UI patterns, and fully responsive layouts.',
@@ -389,7 +389,7 @@ const study = computed(() => {
     <!-- Hero -->
     <SectionWrapper size="md w-full">
         <div class="max-w-7xl mx-auto">
-      <AnimatedSection animation="fade-up">
+      <!-- <AnimatedSection animation="fade-up">
         <RouterLink 
           to="/case-studies"
           class="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
@@ -399,7 +399,7 @@ const study = computed(() => {
           </svg>
           Back to Case Studies
         </RouterLink>
-      </AnimatedSection>
+      </AnimatedSection> -->
 
       <AnimatedSection animation="fade-up" :delay="100">
         <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 text-balance">
