@@ -39,7 +39,7 @@ onUnmounted(() => {
 <header
   class="fixed top-0 left-0 right-0 z-50 transition-all duration-400 w-full"
   :class="[
-    isScrolled ? 'glass border-b border-border shadow-lg shadow-black/5' : 'bg-transparent'
+    isScrolled ? 'glass  border-border shadow-lg shadow-black/5' : 'bg-transparent'
   ]"
 >
 
@@ -55,8 +55,8 @@ onUnmounted(() => {
           @click="closeMobileMenu"
         >
           <span class="font-display text-xl lg:text-2xl font-bold tracking-tight">
-            <span class="text-foreground">Port</span>
-            <span class="text-primary">folio</span>
+            <span class="text-foreground">Blessing</span>&nbsp;
+            <span class="text-primary">Alozie</span>
           </span>
           <span 
             class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"

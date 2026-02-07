@@ -6,52 +6,64 @@ import AnimatedButton from "../components/ui/AnimatedButton.vue";
 import ProjectCard from "../components/ui/ProjectCard.vue";
 
 const featuredDesign = [
+
   {
-    title: "E-Commerce Redesign",
-    description:
-      "Complete UX overhaul resulting in 40% increase in conversion rates.",
-    image: "/images/design-1.jpg",
-    tags: ["UI/UX", "E-Commerce", "Mobile"],
-    link: "/case-studies/ecommerce-redesign",
-  },
+  title: "Daniels Kitchen Website Design",
+  description:
+    "Designed a modern, conversion-focused website for Daniels Kitchen in Figma, translating brand identity into a clean, engaging digital experience. Focused on intuitive user flows, strong visual hierarchy, and fully responsive layouts to ensure seamless performance across mobile, tablet, and desktop devices.",
+  image: "/Daniels-kitchen.png",
+  tags: ["UI/UX Design", "Figma", "Responsive Design", "Brand Experience"],
+  link: "/case-studies/daniels-kitchen",
+},
+
+ {
+  title: "PeerPay Network Product Design",
+  description:
+    "Designed key product experiences for PeerPay Network in Figma, translating complex fintech workflows into clear, user-friendly interfaces. Focused on intuitive navigation, trust-building UI patterns, and fully responsive layouts to ensure seamless performance across mobile, tablet, and desktop devices.",
+  image: "/Peerpay-Network.png",
+  tags: ["Product Design", "Fintech", "Figma", "Responsive Design"],
+  link: "/case-studies/peerpay-network",
+},
+
   {
-    title: "Banking App",
-    description: "Mobile-first banking experience with focus on accessibility.",
-    image: "/images/design-2.jpg",
-    tags: ["Product Design", "Fintech", "iOS"],
-    link: "/case-studies/banking-app",
-  },
-  {
-    title: "Banking App",
-    description: "Mobile-first banking experience with focus on accessibility.",
-    image: "/images/design-2.jpg",
-    tags: ["Product Design", "Fintech", "iOS"],
-    link: "/case-studies/banking-app",
-  },
-  {
-    title: "Banking App",
-    description: "Mobile-first banking experience with focus on accessibility.",
-    image: "/images/design-2.jpg",
-    tags: ["Product Design", "Fintech", "iOS"],
-    link: "/case-studies/banking-app",
-  },
+  title: "CRRNetwork Website Design",
+  description:
+    "Designed a modern, brand-aligned website for CRRNetwork in Figma, transforming business goals into a clear, engaging digital experience. Focused on strong visual hierarchy, intuitive navigation, and fully responsive layouts to ensure seamless performance across mobile, tablet, and desktop devices.",
+  image: "/CRRNetwork..png",
+  tags: ["UI/UX Design", "Figma", "Responsive Design", "Brand Strategy"],
+  link: "/case-studies/crrnetwork-website",
+},
+
+ {
+  title: "PeerPay Credit Transactions Dashboard",
+  description:
+    "Designed a comprehensive credit transactions dashboard for PeerPay Network in Figma, simplifying complex financial data into clear, actionable insights. Focused on structured data visualization, intuitive filtering, and responsive layouts to ensure seamless usability across desktop and tablet devices.",
+  image: "/Peerpay-Network-Credit Transaction _ All Type.png",
+  tags: ["Product Design", "Fintech", "Dashboard Design", "Figma", "Responsive Design"],
+  link: "/case-studies/peerpay-credit-dashboard",
+},
+
 ];
 
 const featuredDev = [
+ {
+  title: "CRRNetwork Web Platform",
+  description:
+    "Developed a responsive and performance-focused web platform for CRRNetwork using HTML, CSS, Vue.js, and JavaScript. Implemented dynamic components, structured layouts, and interactive features to deliver a smooth user experience across desktop and mobile devices.",
+  image: "/CRRNETWORK2.png",
+  tags: ["Vue.js", "JavaScript", "HTML5", "CSS3", "Responsive Design"],
+  link: "https://www.crrnetwork.org/",
+},
+
   {
-    title: "Dashboard Platform",
-    description: "Real-time analytics dashboard built with Vue.js and D3.js.",
-    image: "/images/dev-1.jpg",
-    tags: ["Vue.js", "D3.js", "WebSocket"],
-    link: "/development",
-  },
-  {
-    title: "Component Library",
-    description: "Open-source Vue component library with 50+ components.",
-    image: "/images/dev-2.jpg",
-    tags: ["Vue.js", "TypeScript", "Storybook"],
-    link: "/development",
-  },
+  title: "Daniels Kitchen Website",
+  description:
+    "Developed a modern and responsive restaurant website for Daniels Kitchen using HTML, CSS, Vue.js, and JavaScript. Built dynamic UI sections, interactive menus, and optimized layouts to ensure smooth performance and a seamless experience across mobile and desktop devices.",
+  image: "/Daniels-kitchen.png",
+  tags: ["Vue.js", "JavaScript", "Tailwind CSS", "Responsive Design"],
+  link: "https://daniels-kitchen-com.vercel.app/",
+},
+
 ];
 </script>
 
