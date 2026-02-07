@@ -9,285 +9,373 @@ const route = useRoute()
 
 // Case study data (in a real app, this would come from an API/CMS)
 const caseStudiesData = {
-  'ecommerce-redesign': {
-    title: 'E-Commerce Platform Redesign',
-    subtitle: 'Transforming the shopping experience for a fashion brand',
-    heroImage: '/images/case-detail-1.jpg',
-    role: 'Lead Product Designer',
-    timeline: '3 months',
-    team: '2 Designers, 3 Developers, 1 PM',
-    tools: ['Figma', 'Maze', 'Hotjar', 'Google Analytics'],
-    overview: 'A fashion e-commerce platform was struggling with low conversion rates and high cart abandonment. The existing design felt dated and didn\'t meet modern user expectations for a seamless shopping experience.',
-    problem: {
-      title: 'The Challenge',
-      content: 'The client\'s conversion rate had dropped 15% year-over-year, and user research revealed several pain points: confusing navigation, a complicated checkout process, and poor mobile experience. Cart abandonment was at an alarming 75%.',
-      painPoints: [
-        'Users couldn\'t easily find products they were looking for',
-        'Checkout required 6+ steps and mandatory account creation',
-        'Mobile experience was essentially a shrunk desktop site',
-        'No personalization or product recommendations'
-      ]
-    },
-    process: {
-      title: 'Design Process',
-      steps: [
-        {
-          phase: 'Research & Discovery',
-          description: 'Conducted user interviews, analyzed heatmaps, and reviewed session recordings to understand user behavior and pain points.',
-          outcomes: ['15 user interviews', 'Heatmap analysis', 'Competitive audit']
-        },
-        {
-          phase: 'Information Architecture',
-          description: 'Restructured the navigation and created intuitive category hierarchies based on user mental models.',
-          outcomes: ['Card sorting sessions', 'New site map', 'Navigation prototype']
-        },
-        {
-          phase: 'Wireframing & Prototyping',
-          description: 'Created low-fidelity wireframes and interactive prototypes for usability testing.',
-          outcomes: ['50+ wireframes', 'Clickable prototype', 'User testing']
-        },
-        {
-          phase: 'Visual Design',
-          description: 'Developed a modern, cohesive visual language that aligned with the brand while improving usability.',
-          outcomes: ['Design system', 'Component library', 'Style guide']
-        }
-      ]
-    },
-    solution: {
-      title: 'The Solution',
-      content: 'We completely reimagined the shopping experience with a mobile-first approach, streamlined checkout, and personalized recommendations.',
-      features: [
-        {
-          title: 'Simplified Navigation',
-          description: 'Mega menu with visual categories and smart search with autocomplete'
-        },
-        {
-          title: '3-Step Checkout',
-          description: 'Reduced checkout to 3 simple steps with guest checkout option'
-        },
-        {
-          title: 'Mobile-First Design',
-          description: 'Designed specifically for mobile with touch-friendly interactions'
-        },
-        {
-          title: 'Smart Recommendations',
-          description: 'AI-powered product suggestions based on browsing behavior'
-        }
-      ]
-    },
-    results: {
-      title: 'Results & Impact',
-      metrics: [
-        { label: 'Conversion Rate', value: '+40%', description: 'Increase in completed purchases' },
-        { label: 'Cart Abandonment', value: '-25%', description: 'Reduction in abandoned carts' },
-        { label: 'Mobile Revenue', value: '+60%', description: 'Growth in mobile transactions' },
-        { label: 'Session Duration', value: '+35%', description: 'Longer time spent browsing' }
-      ],
-      testimonial: {
-        quote: 'The redesign exceeded all our expectations. Not only did our metrics improve dramatically, but we\'re receiving constant positive feedback from customers about the new shopping experience.',
-        author: 'Marketing Director',
-        company: 'Fashion Brand'
-      }
-    },
-    learnings: [
-      'Guest checkout is critical - forcing account creation loses customers',
-      'Mobile isn\'t just responsive - it needs dedicated UX thinking',
-      'Small friction points compound into major conversion blockers',
-      'User testing early saves costly development rework'
-    ],
-    gallery: [
-      '/images/gallery-1.jpg',
-      '/images/gallery-2.jpg',
-      '/images/gallery-3.jpg',
-      '/images/gallery-4.jpg'
+  'peerpay-credit-dashboard': {
+  title: 'PeerPay Credit Transactions Dashboard',
+  subtitle: 'Simplifying complex financial data into clear, actionable insights',
+  heroImage: '/Peerpay-Network-Credit Transaction _ All Type.png',
+  role: 'Product Designer',
+  timeline: 'Initial design: 3 months | Iterations ongoing based on user feedback',
+  team: '2 Designers, 4 Developers, 1 PM',
+  tools: ['Figma', 'Responsive Design', 'Fintech UX Patterns', 'Data Visualization Tools'],
+  overview: 'Designed a comprehensive credit transactions dashboard for PeerPay Network in Figma, transforming complex financial data into clear, actionable insights. The project focused on creating structured data visualization, intuitive filtering, and responsive layouts for desktop and tablet users, while maintaining trust and transparency in sensitive financial interactions.',
+  
+  problem: {
+    title: 'The Challenge',
+    content: 'Users struggled to quickly understand their credit transactions and overall portfolio due to complex workflows, lack of visual clarity, and insufficient feedback on actions. The dashboard needed to simplify financial data while maintaining accuracy and trust.',
+    painPoints: [
+      'Difficulty tracking multiple loan and repayment statuses',
+      'Complex filtering and search across transactions',
+      'Lack of visual hierarchy for important metrics',
+      'Mobile and tablet layouts were inconsistent'
     ]
   },
-  'banking-app': {
-    title: 'Mobile Banking App',
-    subtitle: 'Banking for the next generation',
-    heroImage: '/images/case-detail-2.jpg',
-    role: 'UI/UX Designer',
-    timeline: '4 months',
-    team: '3 Designers, 5 Developers, 2 PMs',
-    tools: ['Figma', 'Principle', 'UserTesting', 'Mixpanel'],
-    overview: 'Designing a mobile banking experience that makes financial management intuitive and accessible for Gen Z users while maintaining the trust and security expected from financial institutions.',
-    problem: {
-      title: 'The Challenge',
-      content: 'Traditional banking apps felt overwhelming and intimidating to younger users. Research showed Gen Z wanted simpler interfaces, more transparency, and better financial education.',
-      painPoints: [
-        'Complex interfaces with too much financial jargon',
-        'Poor onboarding experience',
-        'Lack of financial literacy features',
-        'No social or gamification elements'
-      ]
-    },
-    process: {
-      title: 'Design Process',
-      steps: [
-        {
-          phase: 'User Research',
-          description: 'Extensive research with Gen Z users to understand their relationship with money and banking.',
-          outcomes: ['30 user interviews', 'Survey (500+ responses)', 'Persona development']
-        },
-        {
-          phase: 'Concept Development',
-          description: 'Explored multiple design directions focusing on simplicity and education.',
-          outcomes: ['3 design concepts', 'Stakeholder workshops', 'Direction selection']
-        },
-        {
-          phase: 'Prototyping & Testing',
-          description: 'Iterative prototyping with continuous user feedback.',
-          outcomes: ['Interactive prototype', '5 rounds of testing', 'Accessibility audit']
-        },
-        {
-          phase: 'Final Design',
-          description: 'Polished visual design and comprehensive documentation.',
-          outcomes: ['Complete design system', 'Developer handoff', 'Animation specs']
-        }
-      ]
-    },
-    solution: {
-      title: 'The Solution',
-      content: 'A fresh, approachable banking app that makes money management feel less intimidating and more empowering.',
-      features: [
-        {
-          title: 'Visual Balance',
-          description: 'Dashboard showing money in vs out with simple visualizations'
-        },
-        {
-          title: 'Smart Insights',
-          description: 'Plain-language spending analysis and saving suggestions'
-        },
-        {
-          title: 'Learning Hub',
-          description: 'Bite-sized financial education integrated into the experience'
-        },
-        {
-          title: 'Goals & Rewards',
-          description: 'Gamified savings goals with achievement system'
-        }
-      ]
-    },
-    results: {
-      title: 'Results & Impact',
-      metrics: [
-        { label: 'User Satisfaction', value: '4.8/5', description: 'App store rating' },
-        { label: 'Task Completion', value: '95%', description: 'Key tasks completed successfully' },
-        { label: 'App Downloads', value: '500K+', description: 'Downloads in first 6 months' },
-        { label: 'Daily Active Users', value: '68%', description: 'Return rate' }
-      ],
-      testimonial: {
-        quote: 'Finally, a banking app that doesn\'t make me feel like I need a finance degree to use it. It\'s actually helped me start saving.',
-        author: 'User Review',
-        company: 'App Store'
+
+  process: {
+    title: 'Design Process',
+    steps: [
+      {
+        phase: 'User Research & Discovery',
+        description: 'Conducted interviews with borrowers, lenders, and internal staff to identify pain points and understand real-world transaction workflows.',
+        outcomes: ['15 user interviews', 'Workflow mapping', 'Stakeholder insights']
+      },
+      {
+        phase: 'Information Architecture & Wireframing',
+        description: 'Organized data structures and created wireframes for the dashboard, focusing on hierarchy, filtering, and key metrics visibility.',
+        outcomes: ['Wireframes', 'Data hierarchy diagrams', 'Filtering prototypes']
+      },
+      {
+        phase: 'Responsive & Interaction Design',
+        description: 'Designed mobile-first layouts and interactive components, ensuring a seamless experience across tablet and desktop.',
+        outcomes: ['Mobile screens', 'Desktop layouts', 'Interactive prototypes']
+      },
+      {
+        phase: 'Visual Design & Iteration',
+        description: 'Developed a clear visual system aligned with PeerPay’s brand, iterated designs based on internal and beta user feedback to refine usability and trust indicators.',
+        outcomes: ['Component library', 'Design system', 'Iterative prototypes']
+      },
+      {
+        phase: 'Handoff & Collaboration',
+        description: 'Prepared detailed specs, assets, and interactions for the development team, ensuring smooth implementation and adherence to UX principles.',
+        outcomes: ['Handoff documentation', 'Developer support', 'QA for design fidelity']
       }
-    },
-    learnings: [
-      'Financial jargon is a major barrier - plain language wins',
-      'Education works best when integrated, not separate',
-      'Trust is built through transparency and clear feedback',
-      'Accessibility benefits all users, not just those with disabilities'
-    ],
-    gallery: [
-      '/images/banking-1.jpg',
-      '/images/banking-2.jpg',
-      '/images/banking-3.jpg',
-      '/images/banking-4.jpg'
     ]
   },
-  'saas-dashboard': {
-    title: 'SaaS Analytics Dashboard',
-    subtitle: 'Data visualization reimagined',
-    heroImage: '/images/case-detail-3.jpg',
+
+  solution: {
+    title: 'The Solution',
+    content: 'A clear, user-focused credit transactions dashboard that makes monitoring, filtering, and understanding financial data intuitive and reliable.',
+    features: [
+      {
+        title: 'Structured Data Visualization',
+        description: 'Graphs, charts, and tables organized to highlight key metrics and trends.'
+      },
+      {
+        title: 'Intuitive Filtering & Search',
+        description: 'Easy-to-use filters and search to locate transactions quickly.'
+      },
+      {
+        title: 'Responsive Layouts',
+        description: 'Optimized for tablet and desktop, ensuring accessibility and readability across devices.'
+      },
+      {
+        title: 'Real-Time Updates & Notifications',
+        description: 'Live updates on transaction status, repayment schedules, and system alerts to keep users informed.'
+      }
+    ]
+  },
+
+  results: {
+    title: 'Results & Impact',
+    metrics: [
+      { label: 'Transaction Completion Rate', value: '+85%', description: 'More users successfully completed transactions' },
+      { label: 'User Satisfaction', value: '4.8/5', description: 'High rating from beta users on ease-of-use and clarity' },
+      { label: 'Mobile/Tablet Usage', value: '78%', description: 'Majority of users engaging via mobile and tablet' },
+      { label: 'Customer Retention', value: '82%', description: 'Increased repeat usage due to clear UX' }
+    ],
+    testimonial: {
+      quote: 'The dashboard finally makes understanding my credit transactions easy and stress-free. I can see everything at a glance and trust the system.',
+      author: 'Beta User',
+      company: 'PeerPay Network'
+    }
+  },
+
+  learnings: [
+    'Iterative design is crucial for fintech dashboards—real user feedback shapes clarity and trust.',
+    'Visual hierarchy and filtering are key for understanding complex financial data.',
+    'Responsive design is essential for on-the-go banking.',
+    'Trust indicators and feedback loops in the UI increase user confidence.'
+  ],
+
+  gallery: [
+    '/Peerpay-Network-Credit Transaction _ All Type.png',
+    '/Peerpay-Network-Credit Transaction _ Filters.png',
+    '/Peerpay-Network-Credit Transaction _ Charts.png'
+  ]
+},
+  'crrnetwork-website': {
+  title: "CRRNetwork Website Design",
+  subtitle: "Designing and building a high-performance, brand-focused website",
+  heroImage: "/CRRNetwork.png",
+  role: "Product Designer & Frontend Developer",
+  timeline: "1 month",
+  team: "Solo Project (Me)",
+  tools: ["Figma", "HTML", "CSS", "JavaScript", "Vue.js", "SEO", "Responsive Design"],
+  overview: "I designed and developed the CRRNetwork website from the ground up. I translated the brand’s vision into a clean, modern digital experience with intuitive navigation, strong visual hierarchy, and fully responsive layouts. SEO best practices were integrated during development to ensure discoverability and performance across search engines.",
+  problem: {
+    title: "The Challenge",
+    content: "CRRNetwork needed a website that clearly communicated their services, reinforced their brand identity, and performed well across devices and search engines. The previous presence was minimal and didn’t reflect the quality of their offerings.",
+    painPoints: [
+      "No cohesive visual brand online",
+      "Unstructured content and confusing navigation",
+      "Poor mobile experience",
+      "Limited organic search visibility"
+    ]
+  },
+  process: {
+    title: "Design & Development Process",
+    steps: [
+      {
+        phase: "Brand Alignment & Strategy",
+        description: "Defined visual direction, typography, and color palette aligned with the company’s brand identity.",
+        outcomes: ["Brand-aligned style guide", "Typography & color system"]
+      },
+      {
+        phase: "UX Architecture & Wireframes",
+        description: "Mapped out user flows, structured content, and created wireframes to ensure intuitive navigation and clear content hierarchy.",
+        outcomes: ["Sitemap", "User flows", "Wireframes"]
+      },
+      {
+        phase: "UI Design & Responsive Layouts",
+        description: "Designed high-fidelity, responsive interfaces in Figma that adapt seamlessly across mobile, tablet, and desktop devices.",
+        outcomes: ["Responsive UI system", "High-fidelity mockups", "Interactive prototypes"]
+      },
+      {
+        phase: "Frontend Development & SEO Integration",
+        description: "Developed the website using HTML, CSS, and JavaScript while implementing SEO best practices, including meta tags, semantic markup, performance optimization, and accessibility considerations.",
+        outcomes: ["Live responsive website", "SEO-optimized structure", "Performance & accessibility audit"]
+      }
+    ]
+  },
+  solution: {
+    title: "The Solution",
+    content: "A fully responsive, visually cohesive website that communicates CRRNetwork’s brand effectively, guides users intuitively, and ranks well on search engines. Every design and development decision was made with both user experience and performance in mind.",
+    features: [
+      {
+        title: "Brand-Driven Design",
+        description: "Visual identity fully reflected across all pages to strengthen brand recognition."
+      },
+      {
+        title: "Intuitive Navigation",
+        description: "Clear menu structure and logical content hierarchy for seamless browsing."
+      },
+      {
+        title: "Responsive Performance",
+        description: "Optimized layouts and assets for all devices, from mobile to desktop."
+      },
+      {
+        title: "SEO & Accessibility",
+        description: "Built with semantic HTML, meta tags, and accessibility standards to boost search visibility and user inclusivity."
+      }
+    ]
+  },
+  results: {
+    title: "Results & Impact",
+    metrics: [
+      { label: "Page Load Speed", value: "95/100", description: "Google PageSpeed Insights score" },
+      { label: "Mobile Responsiveness", value: "100%", description: "Fully optimized for mobile devices" },
+      { label: "Organic Traffic Growth", value: "+120%", description: "Improved search visibility after launch" },
+      { label: "User Engagement", value: "+75%", description: "Longer session durations and lower bounce rates" }
+    ],
+    testimonial: {
+      quote: "The website exceeded our expectations. The design is modern, user-friendly, and SEO-friendly, giving our brand a professional online presence.",
+      author: "Founder",
+      company: "CRRNetwork"
+    }
+  },
+  learnings: [
+    "Designing and developing a site end-to-end ensures consistent execution",
+    "Integrating SEO during development saves costly retrofits",
+    "Responsive design requires testing across multiple real devices",
+    "Clear UX and brand alignment increase both engagement and trust"
+  ],
+  gallery: ["/CRRNetwork.png"]
+},
+  
+   'peerpay-network': {
+    title: 'PeerPay Network Product Design',
+    subtitle: 'Designing clear fintech workflows',
+    heroImage: '/Peerpay-Network.png',
     role: 'Product Designer',
-    timeline: '2 months',
-    team: '1 Designer, 2 Developers, 1 Data Scientist',
-    tools: ['Figma', 'D3.js', 'Storybook', 'Amplitude'],
-    overview: 'Creating an intuitive analytics dashboard that transforms complex data into actionable insights for enterprise decision-makers.',
+    timeline: 'Continuous (Ongoing)',
+    team: '2 Designers, 4 Developers, 1 PM',
+    tools: ['Figma', 'Responsive Design', 'Fintech Tools'],
+    overview: 'Designed key product experiences for PeerPay Network in Figma, translating complex fintech workflows into clear, user-friendly interfaces. Focused on intuitive navigation, trust-building UI patterns, and fully responsive layouts.',
     problem: {
       title: 'The Challenge',
-      content: 'Enterprise users were drowning in data but starving for insights. The existing dashboard was a wall of numbers and charts that required training to understand.',
+      content: 'Complex fintech workflows were difficult to navigate, causing user confusion and abandonment. Users struggled to understand transaction flows and security measures.',
       painPoints: [
-        'Information overload with no hierarchy',
-        'Charts lacked context and explanations',
-        'No way to customize or save views',
-        'Mobile access was non-existent'
+        'Complex fintech terminology and workflows',
+        'Unclear transaction status and history',
+        'Poor mobile experience for on-the-go banking',
+        'Security features felt intimidating rather than reassuring'
       ]
     },
     process: {
-      title: 'Design Process',
-      steps: [
-        {
-          phase: 'Discovery',
-          description: 'Shadowed users to understand their daily workflows and decision-making processes.',
-          outcomes: ['User shadowing', 'Workflow mapping', 'Key metrics identification']
-        },
-        {
-          phase: 'Information Design',
-          description: 'Restructured data hierarchy based on user priorities and decision needs.',
-          outcomes: ['Information hierarchy', 'Data stories', 'Chart selection']
-        },
-        {
-          phase: 'Interaction Design',
-          description: 'Designed intuitive interactions for exploring and drilling into data.',
-          outcomes: ['Interaction patterns', 'Filter system', 'Export flows']
-        },
-        {
-          phase: 'Implementation',
-          description: 'Worked closely with developers to ensure design fidelity and performance.',
-          outcomes: ['Component library', 'Chart specifications', 'Performance optimization']
-        }
+    title: 'Design Process',
+    steps: [
+      {
+        phase: 'User Research',
+        description: 'Collaborating with the PM, we interviewed users, observed transaction flows, and analyzed where friction occurred.',
+        outcomes: ['20 user interviews', 'Workflow mapping', 'Competitive analysis insights']
+      },
+      {
+        phase: 'Information Architecture',
+        description: 'I translated research insights into wireframes and user flows to simplify complex workflows.',
+        outcomes: ['Wireframes', 'User flows', 'Navigation structure']
+      },
+      {
+        phase: 'Responsive & Interaction Design',
+        description: 'Designed mobile-first layouts and interactions that provide clear feedback and consistent patterns across devices.',
+        outcomes: ['Mobile screens', 'Tablet & desktop layouts', 'Interactive prototypes']
+      },
+      {
+        phase: 'Visual Design & Handoff',
+        description: 'Developed a visual system aligned with the brand and prepared detailed specs for the development team.',
+        outcomes: ['Design system', 'Component library', 'Handoff documentation']
+      }
       ]
     },
     solution: {
       title: 'The Solution',
-      content: 'A clean, focused dashboard that surfaces insights instead of just data.',
+      content: 'A clear, intuitive fintech platform that makes peer-to-peer transactions feel simple and secure.',
       features: [
         {
-          title: 'Executive Summary',
-          description: 'At-a-glance view of key metrics with trend indicators'
+          title: 'Simple Transaction Flows',
+          description: 'Streamlined 3-step process for sending and receiving money'
         },
         {
-          title: 'Smart Alerts',
-          description: 'Proactive notifications for anomalies and opportunities'
-        },
-        {
-          title: 'Custom Views',
-          description: 'Save and share personalized dashboard configurations'
+          title: 'Trust-Building UI',
+          description: 'Clear security indicators and transaction confirmations'
         },
         {
           title: 'Responsive Design',
-          description: 'Full functionality on tablet and mobile devices'
+          description: 'Seamless experience across mobile, tablet, and desktop'
+        },
+        {
+          title: 'Real-time Notifications',
+          description: 'Instant updates on transaction status and account activity'
         }
       ]
     },
     results: {
       title: 'Results & Impact',
       metrics: [
-        { label: 'Time to Insight', value: '-60%', description: 'Faster decision making' },
-        { label: 'Feature Adoption', value: '+80%', description: 'Users using advanced features' },
-        { label: 'Support Tickets', value: '-45%', description: 'Reduction in dashboard questions' },
-        { label: 'User Retention', value: '92%', description: 'Monthly active retention' }
+        { label: 'Transaction Completion', value: '+85%', description: 'Higher completion rates' },
+        { label: 'User Satisfaction', value: '4.7/5', description: 'App store rating' },
+        { label: 'Mobile Usage', value: '78%', description: 'Mobile transactions' },
+        { label: 'Customer Retention', value: '82%', description: 'Monthly active users' }
       ],
       testimonial: {
-        quote: 'For the first time, I can actually understand what our data is telling us without having to export to Excel.',
-        author: 'VP of Operations',
-        company: 'Enterprise Client'
+        quote: 'The new design makes sending money feel effortless. Security doesn\'t feel like a hassle anymore.',
+        author: 'Beta User',
+        company: 'PeerPay Network'
       }
     },
     learnings: [
-      'Less data shown = more insights gained',
-      'Context is as important as the numbers themselves',
-      'Customization is key for diverse user needs',
-      'Performance directly impacts user trust in data accuracy'
+      'Fintech requires clear security UX, not just backend security',
+      'Mobile-first design is critical for peer-to-peer transactions',
+      'Trust is built through transparency in every interaction',
+      'Simplifying complex workflows requires deep domain understanding'
     ],
     gallery: [
-      '/images/dash-1.jpg',
-      '/images/dash-2.jpg',
-      '/images/dash-3.jpg',
-      '/images/dash-4.jpg'
+      '/Peerpay-Network.png'
     ]
+  },
+ 'daniels-kitchen': {
+    title: 'Daniels Kitchen - Designed & Built E-Commerce Website',
+    subtitle: 'Creating a premium digital storefront that drives sales and brand trust',
+    heroImage: '/Daniels-kitchen.png',
+
+    role: 'Sole Designer & Frontend Developer (Led Design to Build)',
+    timeline: '1 Month',
+    team: '1 Designer (Me), 1 Developers (Me)',
+    tools: ['Figma', 'HTML', 'Tailwind CSS', 'Vue.js', 'E-Commerce Architecture', 'SEO'],
+
+    overview: 'I designed and built Daniels Kitchen’s website from scratch, delivering a premium digital storefront that communicates product quality, builds brand trust, and enables seamless online sales. The platform is fully responsive, scalable, and optimized for SEO, helping the business grow online revenue significantly.',
+
+    problem: {
+      title: 'The Challenge',
+      content: 'Daniels Kitchen needed a professional online presence that could support product visibility and digital sales. The goal was to establish a strong premium identity while ensuring the platform could scale with future growth.',
+      painPoints: [
+        'No clear online product presentation to showcase premium quality',
+        'Digital brand identity was non-existent',
+        'Existing solutions could not scale with sales growth',
+        'Mobile users had poor experience, limiting conversions'
+      ]
+    },
+
+    process: {
+      title: 'Design & Build Approach',
+      steps: [
+        {
+          phase: 'Brand & Strategy Alignment',
+          description: 'Defined visual direction and digital positioning to reflect a premium gourmet identity.',
+          outcomes: ['Visual design system', 'Typography & color palette', 'Brand consistency guidelines']
+        },
+        {
+          phase: 'UX Architecture & User Flows',
+          description: 'Mapped product categories and created intuitive browsing-to-checkout flows to improve discoverability and conversions.',
+          outcomes: ['User journey mapping', 'Sitemap', 'Wireframes & prototypes']
+        },
+        {
+          phase: 'UI Design & Mobile-First Layout',
+          description: 'Designed high-fidelity responsive interfaces with strong product storytelling and optimized layouts for conversion.',
+          outcomes: ['Responsive UI system', 'Product pages', 'Conversion-focused design']
+        },
+        {
+          phase: 'Development & Launch',
+          description: 'Built the website frontend with optimized performance and SEO-ready structure, ensuring smooth deployment and scalability.',
+          outcomes: ['Live website', 'Optimized for SEO', 'Performance improvements']
+        }
+      ]
+    },
+
+    solution: {
+      title: 'The Solution',
+      content: 'A premium, fully responsive e-commerce platform designed to highlight product quality and provide a smooth purchasing experience.',
+      features: [
+        { title: 'Premium Brand Expression', description: 'Elegant visual system reflecting gourmet positioning' },
+        { title: 'Structured Product Discovery', description: 'Intuitive categories and search to help users find products quickly' },
+        { title: 'Streamlined Purchase Flow', description: 'Optimized checkout with minimal steps and mobile-friendly forms' },
+        { title: 'Scalable Frontend Architecture', description: 'Built to support future growth and feature expansion' }
+      ]
+    },
+
+    results: {
+      title: 'Impact',
+      metrics: [
+        { label: 'Online Sales Growth', value: '+200%', description: 'First year after launch' },
+        { label: 'Monthly Visitors', value: '15K+', description: 'Consistent traffic from SEO and marketing' },
+        { label: 'Average Order Value', value: '+45%', description: 'Boosted through product presentation improvements' },
+        { label: 'Conversion Rate', value: '3.8%', description: 'Healthy benchmark for e-commerce' }
+      ],
+      testimonial: {
+        quote: 'The website helped us reach customers beyond our physical location and positioned our brand as truly premium.',
+        author: 'Founder',
+        company: 'Daniels Kitchen'
+      }
+    },
+
+    learnings: [
+      'Building from scratch taught me strong information architecture and UX decisions',
+      'Premium brand experience relies on visual consistency and storytelling',
+      'Mobile-first design directly impacts conversion rates for food e-commerce',
+      'Clear UX design can measurably increase revenue and customer engagement'
+    ],
+
+    gallery: ['/Daniels-kitchen.png']
   }
+
 }
 
 const study = computed(() => {
@@ -296,9 +384,11 @@ const study = computed(() => {
 </script>
 
 <template>
-  <main class="pt-24 lg:pt-32" v-if="study">
+  <main class="pt-24 lg:pt-32 " v-if="study">
+  
     <!-- Hero -->
-    <SectionWrapper size="md">
+    <SectionWrapper size="md w-full">
+        <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <RouterLink 
           to="/case-studies"
@@ -320,51 +410,57 @@ const study = computed(() => {
 
       <AnimatedSection animation="fade-up" :delay="150">
         <div class="flex flex-wrap gap-6 text-sm">
-          <div>
+          <div class="px-8">
             <span class="text-muted-foreground">Role</span>
             <p class="font-medium text-foreground">{{ study.role }}</p>
           </div>
-          <div>
+          <div class="px-8">
             <span class="text-muted-foreground">Timeline</span>
             <p class="font-medium text-foreground">{{ study.timeline }}</p>
           </div>
-          <div>
+          <div class="px-8">
             <span class="text-muted-foreground">Team</span>
             <p class="font-medium text-foreground">{{ study.team }}</p>
           </div>
-          <div>
+          <div class="px-8">
             <span class="text-muted-foreground">Tools</span>
             <p class="font-medium text-foreground">{{ study.tools.join(', ') }}</p>
           </div>
         </div>
       </AnimatedSection>
+        </div>
     </SectionWrapper>
 
     <!-- Hero Image -->
     <SectionWrapper size="sm" :no-padding="true" class="py-8">
+        <div class="max-w-7xl mx-auto py-8">
       <AnimatedSection animation="scale-in">
-        <div class="rounded-2xl overflow-hidden bg-muted glow">
+        <div class="rounded-2xl overflow-hidden bg-muted">
           <img
             :src="study.heroImage"
             :alt="study.title"
-            class="w-full aspect-video object-cover"
+            class="w-full aspect-video pos object-cover object-top"
           />
         </div>
       </AnimatedSection>
+       </div>
     </SectionWrapper>
 
     <!-- Overview -->
     <SectionWrapper size="md">
-      <AnimatedSection animation="fade-up">
+        <div class="max-w-7xl mx-auto">
+     <AnimatedSection animation="fade-up">
         <div class="max-w-3xl">
           <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">Overview</h2>
           <p class="text-lg text-muted-foreground leading-relaxed">{{ study.overview }}</p>
         </div>
       </AnimatedSection>
+        </div>
     </SectionWrapper>
 
     <!-- Problem -->
     <SectionWrapper size="md" class="bg-muted/30">
+        <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <div class="max-w-3xl">
           <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -387,10 +483,12 @@ const study = computed(() => {
           </ul>
         </div>
       </AnimatedSection>
+        </div>
     </SectionWrapper>
 
     <!-- Process -->
     <SectionWrapper size="lg">
+        <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
           {{ study.process.title }}
@@ -424,10 +522,12 @@ const study = computed(() => {
           </div>
         </AnimatedSection>
       </div>
+        </div>
     </SectionWrapper>
 
     <!-- Solution -->
     <SectionWrapper size="lg" class="bg-muted/30">
+        <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <div class="max-w-3xl mb-8">
           <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -455,10 +555,12 @@ const study = computed(() => {
           </div>
         </AnimatedSection>
       </div>
+        </div>
     </SectionWrapper>
 
     <!-- Results -->
     <SectionWrapper size="lg">
+        <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
           {{ study.results.title }}
@@ -497,10 +599,12 @@ const study = computed(() => {
           </footer>
         </blockquote>
       </AnimatedSection>
+        </div>
     </SectionWrapper>
 
     <!-- Learnings -->
     <SectionWrapper size="md" class="bg-muted/30">
+        <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="fade-up">
         <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-6">
           Key Learnings
@@ -518,10 +622,12 @@ const study = computed(() => {
           </li>
         </ul>
       </AnimatedSection>
+        </div>
     </SectionWrapper>
 
     <!-- CTA -->
     <SectionWrapper size="md">
+        <div class="max-w-7xl mx-auto">
       <AnimatedSection animation="scale-in">
         <div class="text-center">
           <h2 class="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -544,6 +650,7 @@ const study = computed(() => {
           </div>
         </div>
       </AnimatedSection>
+        </div>
     </SectionWrapper>
   </main>
 
