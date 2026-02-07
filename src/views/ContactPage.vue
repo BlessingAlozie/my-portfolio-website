@@ -24,30 +24,25 @@ const subjects = [
 ]
 
 const socialLinks = [
-  { 
-    name: 'GitHub', 
-    url: 'https://github.com', 
-    icon: 'github',
-    description: 'Check out my code'
-  },
+
   { 
     name: 'LinkedIn', 
-    url: 'https://linkedin.com', 
+    url: 'https://linkedin.com/in/blessingalozie1', 
     icon: 'linkedin',
     description: 'Connect professionally'
   },
   { 
     name: 'Twitter', 
-    url: 'https://twitter.com', 
+    url: 'https://x.com/lightdevbabe', 
     icon: 'twitter',
     description: 'Follow my thoughts'
   },
-  { 
-    name: 'Dribbble', 
-    url: 'https://dribbble.com', 
-    icon: 'dribbble',
-    description: 'See my designs'
-  }
+  // { 
+  //   name: 'Dribbble', 
+  //   url: 'https://dribbble.com', 
+  //   icon: 'dribbble',
+  //   description: 'See my designs'
+  // }
 ]
 
 const handleSubmit = async () => {
@@ -116,14 +111,14 @@ const handleSubmit = async () => {
        <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
         <!-- Form -->
-        <AnimatedSection animation="fade-up">
+        <!-- <AnimatedSection animation="fade-up">
           <div class="bg-card border border-border rounded-2xl p-6 md:p-8">
             <h2 class="font-display text-2xl font-bold text-foreground mb-6">
               Send a message
             </h2>
 
-            <!-- Success state -->
-            <div 
+             Success state -->
+            <!-- <div 
               v-if="isSubmitted" 
               class="text-center py-12"
             >
@@ -137,20 +132,20 @@ const handleSubmit = async () => {
               <AnimatedButton variant="outline" @click="isSubmitted = false">
                 Send another message
               </AnimatedButton>
-            </div>
+            </div> -->
 
             <!-- Form -->
-            <form v-else @submit.prevent="handleSubmit" class="space-y-5">
+            <!-- <form v-else @submit.prevent="handleSubmit" class="space-y-5"> -->
               <!-- Error message -->
-              <div 
+              <!-- <div 
                 v-if="error" 
                 class="p-4 rounded-lg bg-red-500/10 border border-red-500/20 text-red-500 text-sm"
               >
                 {{ error }}
-              </div>
+              </div> -->
 
               <!-- Name -->
-              <div>
+              <!-- <div>
                 <label for="name" class="block text-sm font-medium text-foreground mb-2">
                   Name
                 </label>
@@ -161,10 +156,10 @@ const handleSubmit = async () => {
                   placeholder="Your name"
                   class="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                 />
-              </div>
+              </div> -->
 
               <!-- Email -->
-              <div>
+              <!-- <div>
                 <label for="email" class="block text-sm font-medium text-foreground mb-2">
                   Email
                 </label>
@@ -175,14 +170,14 @@ const handleSubmit = async () => {
                   placeholder="your@email.com"
                   class="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                 />
-              </div>
+              </div> -->
 
               <!-- Subject -->
-              <div>
+              <!-- <div>
                 <label for="subject" class="block text-sm font-medium text-foreground mb-2">
                   Subject
-                </label>
-                <select
+                </label> -->
+                <!-- <select
                   id="subject"
                   v-model="form.subject"
                   class="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all appearance-none cursor-pointer"
@@ -196,10 +191,10 @@ const handleSubmit = async () => {
                     {{ option.label }}
                   </option>
                 </select>
-              </div>
+              </div> -->
 
               <!-- Message -->
-              <div>
+              <!-- <div>
                 <label for="message" class="block text-sm font-medium text-foreground mb-2">
                   Message
                 </label>
@@ -210,10 +205,10 @@ const handleSubmit = async () => {
                   placeholder="Tell me about your project..."
                   class="w-full px-4 py-3 rounded-lg bg-muted border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
                 />
-              </div>
+              </div> -->
 
               <!-- Submit -->
-              <AnimatedButton 
+              <!-- <AnimatedButton 
                 variant="primary" 
                 size="lg" 
                 :disabled="isSubmitting"
@@ -233,9 +228,9 @@ const handleSubmit = async () => {
                   </svg>
                 </span>
               </AnimatedButton>
-            </form>
+            </form> 
           </div>
-        </AnimatedSection>
+        </AnimatedSection> -->
 
         <!-- Contact Info -->
         <div>
@@ -262,7 +257,7 @@ const handleSubmit = async () => {
                 </div>
                 <div>
                   <span class="text-sm text-muted-foreground">Email me at</span>
-                  <p class="font-medium">hello@example.com</p>
+                  <p class="font-medium">alozieblessing23@gmail.com</p>
                 </div>
               </a>
             </div>
