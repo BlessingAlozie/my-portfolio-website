@@ -1,8 +1,9 @@
 <template>
   <main class="pt-24 lg:pt-32">
     <!-- Hero -->
-    <SectionWrapper size="md">
+  <SectionWrapper size="md">
       <div class="max-w-7xl mx-auto">
+        <div class="max-w-3xl pb-4">
         <AnimatedSection animation="fade-up">
           <span class="text-primary font-medium text-sm uppercase tracking-widest mb-4 block">
             Contact
@@ -10,7 +11,7 @@
         </AnimatedSection>
 
         <AnimatedSection animation="fade-up" :delay="100">
-          <h1 class="font-display text-5xl md:text-6xl font-bold text-foreground mb-6 text-balance">
+          <h1 class="font-display text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">
             Let's work <span class="gradient-text">together</span>
           </h1>
         </AnimatedSection>
@@ -21,12 +22,15 @@
             who understands design? I'd love to hear from you.
           </p>
         </AnimatedSection>
+     </div>
       </div>
     </SectionWrapper>
 
+
     <!-- Booking Calendar -->
-    <SectionWrapper size="lg" class="mt-20">
-      <div class="max-w-5xl mx-auto mt-20">
+     <div class="bg-card pt-4 ">
+    <SectionWrapper size="lg" >
+      <div class="max-w-5xl mx-auto ">
         <AnimatedSection animation="fade-up">
           <div class="text-center mb-12">
             <h2 class="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -39,17 +43,18 @@
         </AnimatedSection>
 
         <AnimatedSection animation="fade-up" :delay="100">
-          <div class="bg-card w-full border border-border rounded-2xl p-6 md:p-8 min-h-[600px] shadow-md">
+          <div class="bg-card w-full md:border md:border-border md:rounded-2xl md:p-6 md:p-8 min-h-[600px] shadow-md">
             <CalBooking />
           </div>
         </AnimatedSection>
       </div>
     </SectionWrapper>
+    </div>
 
     
  <!-- Contact Section -->
 <SectionWrapper size="lg">
-  <div class="flex justify-center items-center w-full min-h-[600px] bg-card mt-20">
+  <div class="flex justify-center items-center w-full  ">
     <div class="   max-w-7xl  w-full flex flex-col md:flex-row gap-10">
       
       <!-- Contact Info + Social Links -->
@@ -135,6 +140,10 @@
 
 <script setup>
 import { ref } from 'vue'
+import SectionWrapper from "../components/ui/SectionWrapper.vue";
+import AnimatedSection from "../components/ui/AnimatedSection.vue";
+import AnimatedButton from "../components/ui/AnimatedButton.vue";
+
 import CalBooking from '@/components/ui/CalBooking.vue'
 
 const socialLinks = [
@@ -149,7 +158,7 @@ const socialLinks = [
     name: 'Twitter', 
     url: 'https://twitter.com', 
     icon: 'twitter',
-    description: 'Follow my thoughts'
+    description: 'View my profile'
   },
 
   

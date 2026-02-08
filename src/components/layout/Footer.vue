@@ -14,8 +14,8 @@ const quickLinks = [
 
 const socialLinks = [
 
-  { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'linkedin' },
-  { name: 'Twitter', url: 'https://twitter.com', icon: 'twitter' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/blessingalozie1/', icon: 'linkedin' },
+  { name: 'Twitter', url: 'https://x.com/lightdevbabe', icon: 'twitter' },
   // { name: 'Dribbble', url: 'https://dribbble.com', icon: 'dribbble' },
 ]
 </script>
@@ -25,7 +25,7 @@ const socialLinks = [
     <!-- full-width background -->
     <SectionWrapper size="md" class="px-0">
       <!-- main content grid -->
-      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
+      <div class="max-w-7xl mx-auto  grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12">
         
         <!-- Brand -->
         <div class="space-y-4">
@@ -91,7 +91,7 @@ const socialLinks = [
       </div>
 
       <!-- Bottom -->
-      <div class="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4 max-w-7xl mx-auto px-4">
+      <div class="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-left gap-4 max-w-7xl mx-auto ">
         <p class="text-sm text-muted-foreground">
           {{ currentYear }} Portfolio. Crafted with care.
         </p>
