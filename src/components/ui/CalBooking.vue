@@ -62,6 +62,6 @@ onMounted(() => {
 <template>
   <div
     id="cal-product-design"
-    class="w-full min-h-[650px] overflow-auto"
+    class="w-full items-center overflow-auto"
   />
 </template>
