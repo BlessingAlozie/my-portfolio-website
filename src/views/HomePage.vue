@@ -34,14 +34,14 @@ const featuredDesign = [
   link: "/case-studies/crrnetwork-website",
 },
 
-//  {
-//   title: "PeerPay Credit Transactions Dashboard",
-//   description:
-//     "Designed a comprehensive credit transactions dashboard for PeerPay Network in Figma, simplifying complex financial data into clear, actionable insights. Focused on structured data visualization, intuitive filtering, and responsive layouts to ensure seamless usability across desktop and tablet devices.",
-//   image: "/Peerpay-Network-Credit Transaction _ All Type.png",
-//   tags: ["Product Design", "Fintech", "Dashboard Design", "Figma", "Responsive Design"],
-//   link: "/case-studies/peerpay-credit-dashboard",
-// },
+ {
+  title: "PeerPay Credit Transactions Dashboard",
+  description:
+    "Designed a comprehensive credit transactions dashboard for PeerPay Network in Figma, simplifying complex financial data into clear, actionable insights. Focused on structured data visualization, intuitive filtering, and responsive layouts to ensure seamless usability across desktop and tablet devices.",
+  image: "/Peerpay-Network-Credit Transaction _ All Type.png",
+  tags: ["Product Design", "Fintech", "Dashboard Design", "Figma", "Responsive Design"],
+  link: "/case-studies/peerpay-credit-dashboard",
+},
 
 ];
 
@@ -56,14 +56,14 @@ const featuredDev = [
   link: "/case-studies/crrnetwork-web-platform",
 },
 
-  {
-  title: "Daniels Kitchen Website",
-  description:
-    "Developed a modern and responsive restaurant website for Daniels Kitchen using HTML, CSS, Vue.js, and JavaScript. Built dynamic UI sections, interactive menus, and optimized layouts to ensure smooth performance and a seamless experience across mobile and desktop devices.",
-  image: "/Daniels-kitchen.png",
-  tags: ["Vue.js", "JavaScript", "Tailwind CSS", "Responsive Design"],
-  link: "https://daniels-kitchen-com.vercel.app/",
-},
+//   {
+//   title: "Daniels Kitchen Website",
+//   description:
+//     "Developed a modern and responsive restaurant website for Daniels Kitchen using HTML, CSS, Vue.js, and JavaScript. Built dynamic UI sections, interactive menus, and optimized layouts to ensure smooth performance and a seamless experience across mobile and desktop devices.",
+//   image: "/Daniels-kitchen.png",
+//   tags: ["Vue.js", "JavaScript", "Tailwind CSS", "Responsive Design"],
+//   link: "https://daniels-kitchen-com.vercel.app/",
+// },
 
 ];
 </script>

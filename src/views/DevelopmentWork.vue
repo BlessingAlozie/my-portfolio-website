@@ -21,28 +21,28 @@ const projects = [
     challenges:
       "Balancing visual design with accessibility standards and SEO best practices while maintaining optimal performance across devices.",
   },
-  {
-    title: "Landing Page for Daniel’s Kitchen",
-    description:
-      "Designed and developed a visually appealing, responsive landing page for Daniel’s Kitchen. Focused on creating a seamless user experience with mouth-watering visuals, smooth animations, and clear calls-to-action, optimized for both desktop and mobile.",
-    image: "/Daniels-kitchen.png",
-    tags: [
-      "Vue.js 3",
-      "Tailwind CSS",
-      "Responsive Design",
-      "UI/UX",
-    ],
-    liveUrl: "https://daniels-kitchen-com.vercel.app/",
-    highlights: [
-      "Fully responsive layout optimized for mobile and desktop",
-      "Interactive hero section with dynamic food visuals",
-      "Smooth scroll and hover animations to enhance engagement",
-      "Clear call-to-action buttons for pre-orders and menu browsing",
-      "Performance-optimized images and lazy loading for faster page load",
-    ],
-    challenges:
-      "Balancing high-quality food imagery with page speed and responsiveness across devices.",
-  },
+  // {
+  //   title: "Landing Page for Daniel’s Kitchen",
+  //   description:
+  //     "Designed and developed a visually appealing, responsive landing page for Daniel’s Kitchen. Focused on creating a seamless user experience with mouth-watering visuals, smooth animations, and clear calls-to-action, optimized for both desktop and mobile.",
+  //   image: "/Daniels-kitchen.png",
+  //   tags: [
+  //     "Vue.js 3",
+  //     "Tailwind CSS",
+  //     "Responsive Design",
+  //     "UI/UX",
+  //   ],
+  //   liveUrl: "https://daniels-kitchen-com.vercel.app/",
+  //   highlights: [
+  //     "Fully responsive layout optimized for mobile and desktop",
+  //     "Interactive hero section with dynamic food visuals",
+  //     "Smooth scroll and hover animations to enhance engagement",
+  //     "Clear call-to-action buttons for pre-orders and menu browsing",
+  //     "Performance-optimized images and lazy loading for faster page load",
+  //   ],
+  //   challenges:
+  //     "Balancing high-quality food imagery with page speed and responsiveness across devices.",
+  // },
 ];
 
 const techStack = [

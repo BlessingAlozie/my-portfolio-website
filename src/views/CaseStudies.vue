@@ -43,19 +43,19 @@ const caseStudies = [
       { label: 'Performance Focus', value: 'Optimized' }
     ]
   },
-  {
-    slug: 'daniels-kitchen',
-    title: 'Daniel’s Kitchen Website',
-    subtitle: 'Designing and building a modern restaurant experience',
-    description: 'Designed and developed a visually engaging and conversion-focused website for Daniel’s Kitchen. Combined strong UI principles with responsive frontend implementation using Vue.js and Tailwind CSS to create an immersive browsing experience for food lovers.',
-    image: '/Daniels-kitchen.png',
-    category: 'Design & Development',
-    metrics: [
-      { label: 'Responsive Design', value: '100%' },
-      { label: 'User Experience', value: 'Optimized' },
-      { label: 'Interactive UI', value: 'Implemented' }
-    ]
-  }
+  // {
+  //   slug: 'daniels-kitchen',
+  //   title: 'Daniel’s Kitchen Website',
+  //   subtitle: 'Designing and building a modern restaurant experience',
+  //   description: 'Designed and developed a visually engaging and conversion-focused website for Daniel’s Kitchen. Combined strong UI principles with responsive frontend implementation using Vue.js and Tailwind CSS to create an immersive browsing experience for food lovers.',
+  //   image: '/Daniels-kitchen.png',
+  //   category: 'Design & Development',
+  //   metrics: [
+  //     { label: 'Responsive Design', value: '100%' },
+  //     { label: 'User Experience', value: 'Optimized' },
+  //     { label: 'Interactive UI', value: 'Implemented' }
+  //   ]
+  // }
 ]
 
 </script>
